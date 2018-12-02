@@ -1,30 +1,33 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+using System. Collections. Generic;
+using System. Text;
+using System. Threading. Tasks;
 namespace assign
-{class program
-{static void main(string[]args)
-{string ename, reply;
+{
+    class program
+{
+    static void Main(string[] args)
+{
+    string ename, reply;
 int hours=0, eid, a;
 double bonus=0, tax=0, salary=0, ssf;
 double grosssalary=0, netsalary=0;
-console.clear();
-console.write("management of employee salary");
-console.write("\n\n");
+Console.Clear();
+Console.Write("management of employee salary");
+Console.Write("\n\n");
 while (true)
 {
-    console.write("enter name ");
-    ename = console.readline();
+    Console.Write("enter name: ");
+    ename = Console.ReadLine();
     Console.Write("enter id ");
-    eid = Convert.toInt32(console.Readline());
-    System.Console.Writeline("employees");
-    console.writeline("-------");
-    console.writeline("month.");
-    console.writeline("hours");
-    console.writeline("evening");
-    console.writeline("choose type of employee");
-    a=Convert.toint32(console.readline());
+    eid = Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine("employees");
+    Console.WriteLine("-------");
+   Console.WriteLine("month.");
+    Console.WriteLine("hours");
+    Console.WriteLine("evening");
+    Console.WriteLine("choose type of employee");
+    a=Convert.ToInt32(Console.ReadLine());
     switch (a)
     {
         case 1:
@@ -32,66 +35,66 @@ while (true)
         tax =salary*18/100;
         ssf =salary*3/100;
         netsalary = salary -tax-ssf;
-        console.write("employee records\n");
-        console.writeline("--------------");
-     console.write("\n\n");
-     console.writeline("employee name {0}\n",ename);
-     console.writeline("employee id {0}\n", eid);
-     console.writeline("gross salary php {0:0.00}",netsalary);
+        Console.Write("employee records\n");
+        Console.WriteLine("--------------");
+     Console.Write("\n\n");
+     Console.WriteLine("employee name {0}\n",ename);
+     Console.WriteLine("employee id {0}\n", eid);
+     Console.WriteLine("gross salary php {0:0.00}",netsalary);
      break;
      case 2:
-     console.write("enter hours worked:");
-     hours = convert.toInt32(console.readline());
-     console.write("enter salary per hour ");
-     salary = convert.todouble(console.readline());
+     Console.Write("enter hours worked:");
+     hours = Convert.ToInt32(Console.ReadLine());
+     Console.Write("enter salary per hour ");
+     salary = Convert.ToDouble(Console.ReadLine());
      grosssalary = (hours * salary);
-     console.write("\n");
-     console.writeline("gross salary {0:0.00} ", grosssalary);
-     console.write("\n");
-     console.write("\n");
+     Console.Write("\n");
+     Console.WriteLine("gross salary {0:0.00} ", grosssalary);
+     Console.Write("\n");
+     Console.Write("\n");
      tax =grosssalary * 18/100;
      netsalary =grosssalary-tax;
-     console.write("employee records\n\n");
-     console.writeline("------------");
-     console.write("\n\n");
-     console.writeline("employee name {0}", ename);
-     console.writeline("gross salary {0:0.00}", grosssalary);
-     console.write("\n\n");
-     console.writeline("the tax of 18 {0}", tax);
-     console.writeline("netsalary php {0:0.00}", netsalary);
+      Console.Write("employee records\n\n");
+     Console.WriteLine("------------");
+     Console.Write("\n\n");
+     Console.WriteLine("employee name {0}", ename);
+     Console.WriteLine("gross salary {0:0.00}", grosssalary);
+     Console.Write("\n\n");
+     Console.WriteLine("the tax of 18 {0}", tax);
+     Console.WriteLine("netsalary php {0:0.00}", netsalary);
      break;
      case 3:
-     console.write("enter hours worked ");
-     hours =onvert.toInt32(console.readline());
-     console.write("enter salary /hours ");
-     salary = convert.todouble(console.readline());
+     Console.Write("enter hours worked ");
+     hours =Convert.ToInt32(Console.ReadLine());
+     Console.Write("enter salary /hours ");
+     salary = Convert.ToDouble(Console.ReadLine());
      grosssalary = (hours * salary);
      bonus = grosssalary * 0.15/100;
-     console.write("\n");
-     console.writeline("gross salary php{0:0.00} ", grosssalary);
-     console.write("\n\n");
-     console.write("\n\n");
+     Console.Write("\n");
+     Console.WriteLine("gross salary php{0:0.00} ", grosssalary);
+     Console.Write("\n\n");
+     Console.Write("\n\n");
      tax = grosssalary* 18/100;
      netsalary =grosssalary - salary - tax + bonus;
-     console.write("employee records");
-     console.writeline("------------");
-     console.write("\n\n");
-     console.writeline("employee name {0}", ename);
-     console.writeline("gross salary php{0:0.00}",grosssalary);
-     console.writeline("evening bonus php {0:0.00}",bonus);
-     console.write("\n\n");
-     console.writeline("the tax of 18% {0}\n", tax);
-     console.writeline("net salary {0:0.00}", netsalary);
+     Console.Write("employee records");
+     Console.WriteLine("------------");
+     Console.Write("\n\n");
+     Console.WriteLine("employee name {0}", ename);
+     Console.WriteLine("gross salary php{0:0.00}",grosssalary);
+     Console.WriteLine("evening bonus php {0:0.00}",bonus);
+     Console.Write("\n\n");
+     Console.WriteLine("the tax of 18% {0}\n", tax);
+     Console.WriteLine("net salary {0:0.00}", netsalary);
      break;
-     console.writeline("invali choice");
-     break;
+    
     }
-     console.write("go on? Y/N ");
-    reply = console.readline();
+     Console.Write("go on? Y/N ");
+    reply = Console.ReadLine();
     if (reply == "y" )
     {continue;}
     else if (reply =="n")
-    {console.write("exit");
-    console.write("\n\n");
-    break;}
+    {Console.Write("exit");
+    Console.Write("\n\n");
+    break;
+    }
 } }}}
