@@ -8,11 +8,11 @@ namespace Csharp
         public int empId;
         public string empName;
         public string empType;
-        public employee(int aId, string aName, string aType)
+        public employee(int eId, string eName, string eType)
         {
-            empId = aId;
-            empName = aName;
-            empType = aType;
+            empId = eId;
+            empName = eName;
+            empType = eType;
         }
         public double payment()
         {
