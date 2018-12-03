@@ -1,63 +1,37 @@
 using System;
-using System. Collections. Generic;
-using System. Text;
-using System. Threading. Tasks;
-
-namespace ConsoleApp1
+namespace Calculate{}
+static void main()
 {
-    class calculate
+class Calculate
 {
-    public double Add(double n1, double n2)
-    { 
-        return n1+n2;
+  
+    public double add(double num1, double num2)
+    {
         
+        return (num1+num2);
+
     }
-    public double Substract(double n1, double n2)
+    
+        public double substract(double num1,double num2)
+        {
+return num1-num2;
+    }
+    public double Multiply(double num1,double num2)
     {
-        if (n1 > n2)
-        {
-
-        return (n1-n2);
-        }
-        else
-        {
-             return (0);
-        }
+return num1*num2;
     }
-public int Divide(int n1, int n2)
-{
-    if(n1>n2 && n1!=0)
+    public double divide(double num1,double num2)
     {
-        return n1/n2;
-    }
-        else
-        {
-            
-                return (0);
-            
-        }
-}
-public int Multiply(int n1, int n2)
+return num1/num2;
+if(num2!=0)
 {
-
-    return n1*n2;
+    return num1/num2;
 }
-
-
-  static void main(string[] args)
-  {
-      var obj= new calculate;
-      Console.WriteLine("enter number1");
-      var n1 =Console.ReadLine();
-      Console.WriteLine("enter number2");
-      var n2=Console.ReadLine();
-      char oper;
-      switch (oper)
-      {
-          case '+':
-          Console.WriteLine(n1+n2);
-          break;
-      }
-
-
-  }
+    else
+    {
+        break;
+    }
+}
+    }
+}
+}}

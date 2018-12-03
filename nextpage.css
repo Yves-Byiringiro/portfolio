@@ -1,0 +1,14 @@
+#na li{
+	margin:2px solid gray;
+	padding: 14px 25px; 
+	display:inline-block;
+	background-color: #f44336; 
+	list-style:circle;
+	border:1px solid red;
+	text-align:center;
+	text-decoration:underline;
+
+
+
+
+}
